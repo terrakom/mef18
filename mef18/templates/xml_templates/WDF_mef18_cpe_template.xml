@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<credentials>
+
+    <system name="target_system">
+		<ip>{{ target_system.address|default:"10.3.3.18" }}</ip>
+		<conn_type>ssh</conn_type>
+		<conn_options>-o stricthostkeychecking=no</conn_options>
+		<ssh_port>{{ target_system.port|default:"22" }}</ssh_port>
+		<username>{{ target_system.username|default:"admin" }}</username>
+		<password>{{ target_system.password|default:"admin" }}</password>
+		<prompt>\$</prompt>
+		<testdata>../config_files/TD_mef18.xml</testdata>
+    </system>
+
+    <system name="via_system">
+		<ip>{{ via_system.address|default:"12.145.98.225" }}</ip>
+		<conn_type>ssh</conn_type>
+		<conn_options>-o stricthostkeychecking=no</conn_options>
+		<ssh_port>{{ via_system.port|default:"22" }}</ssh_port>
+		<username>{{ via_system.username|default:"root" }}</username>
+		<password>{{ via_system.password|default:"M3f18us3r" }}</password>
+		<prompt>\$</prompt>
+		<testdata>../config_files/TD_mef18.xml</testdata>
+    </system>
+
+</credentials>

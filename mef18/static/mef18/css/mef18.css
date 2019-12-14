@@ -1,0 +1,26 @@
+
+.fa.fa-arrow-left{
+    color: gray;
+    font-size: 32px;
+}
+
+.fa.fa-arrow-right{
+    color: gray;
+    font-size: 32px;
+}
+
+.carousel-indicators li{
+    background-color: gray;
+}
+
+.carousel-indicators .active{
+    background-color: green;
+}
+
+.h-100{
+    min-height: 400px;
+}
+
+.carousel-item{
+    min-height: 400px;
+}
